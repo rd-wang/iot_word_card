@@ -1,5 +1,9 @@
 package com.example.iot_word_card;
 
+import com.google.gson.Gson;
+
+import java.util.Map;
+
 public class IotMessage {
     public IotMessage(int code) {
         this.code = code;
@@ -32,5 +36,9 @@ public class IotMessage {
     int subCode;
     String desc;
     Message message;
+
+    public String toJson() {
+        return new Gson().toJson(this);
+    }
 }
 

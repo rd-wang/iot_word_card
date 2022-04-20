@@ -40,18 +40,22 @@ public class IotWordCardPlugin implements FlutterPlugin, MethodCallHandler, Even
 
     @Override
     public void onMethodCall(@NonNull MethodCall call, @NonNull Result result) {
-        if (call.method.equals("getPlatformVersion")) {
-            result.success("Android " + android.os.Build.VERSION.RELEASE);
-        } else if (call.method.equals("connect")) {
-            Iot.connect(context, call, result, eventSink);
-        } else if (call.method.equals("isConnected")) {
-
-        } else if (call.method.equals("subscribe")) {
-//
-        } else if (call.method.equals("onNotify")) {
-            result.success(Iot.isInitDone);
-        } else {
-            result.notImplemented();
+        switch (call.method) {
+            case "getSDKVersion":
+                result.success("iot_1.0.0");
+                break;
+            case "init":
+                Iot.connect(context, call, result, eventSink);
+                break;
+            case "subscribe":
+                Iot.subscribe(call, result);
+                break;
+            case "publish":
+                Iot.publish(call,result);
+                break;
+            default:
+                result.notImplemented();
+                break;
         }
     }
 

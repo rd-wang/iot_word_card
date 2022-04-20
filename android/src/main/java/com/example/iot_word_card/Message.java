@@ -9,4 +9,5 @@ public class Message {
     String electric;
     String version;
     String deviceId;
+
 }
