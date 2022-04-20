@@ -76,7 +76,6 @@ class IotConfig {
     jsonObject.putIfAbsent("deviceName", () => deviceName);
     jsonObject.putIfAbsent("deviceSecret", () => deviceSecret);
     jsonObject.putIfAbsent("productSecret", () => productSecret);
-
     return jsonObject;
   }
 }

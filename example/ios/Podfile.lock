@@ -1,0 +1,34 @@
+PODS:
+  - Flutter (1.0.0)
+  - IMSLog (1.0.8)
+  - iot_word_card (0.0.1):
+    - Flutter
+    - IMSLog
+    - IotLinkKit (~> 1.2.0)
+  - IotLinkKit (1.2.2):
+    - IMSLog
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - iot_word_card (from `.symlinks/plugins/iot_word_card/ios`)
+
+SPEC REPOS:
+  https://github.com/aliyun/aliyun-specs.git:
+    - IMSLog
+    - IotLinkKit
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  iot_word_card:
+    :path: ".symlinks/plugins/iot_word_card/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
+  IMSLog: d17ae9fa27c5a31ef5a76ed4e233fd4c89404508
+  iot_word_card: 46ba9ad7540b9c5b131ddb6e8844abd937ee335a
+  IotLinkKit: 0ee37f86a8af9e0437e3037800fdd98d9100a9eb
+
+PODFILE CHECKSUM: 505b408e2cf9f5f8efecbe4b35fecb69c614f574
+
+COCOAPODS: 1.10.1
