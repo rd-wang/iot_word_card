@@ -32,6 +32,5 @@ public class IotMessage {
     int subCode;
     String desc;
     Message message;
-    String connectState;
 }
 

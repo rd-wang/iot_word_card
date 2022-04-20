@@ -4,12 +4,17 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+code一览
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+100100    CONNECTED:
+100101    CONNECTING
+100102    CONNECTFAIL
+100103    DISCONNECTED
+200100    onNotify    
+200200    init        初始化成功
+-200200   init        初始化失败
+200201    publish     发布成功
+-200201   publish     发布失败
+200202    subscribe   订阅成功
+-200202   subscribe   订阅失败
 

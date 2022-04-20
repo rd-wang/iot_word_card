@@ -119,7 +119,7 @@ public class Iot {
                     @Override
                     public void onConnectStateChange(String connectId, ConnectState connectState) {
                         AppLog.d(TAG, "onConnectStateChange() called with: connectId = [" + connectId + "], connectState = [" + connectState + "]");
-                        switch (connectState){
+                        switch (connectState) {
                             case CONNECTED:
                                 eventSink.success(new IotMessage(100100));
                                 break;
@@ -145,10 +145,10 @@ public class Iot {
                         // 如一开始网络不通导致初始化失败，后续网络恢复之后需要重新初始化
                         if (error != null) {
                             AppLog.d(TAG, "初始化失败，错误信息：" + error.getCode() + "-" + error.getSubCode() + ", " + error.getMsg());
-                            result.success(new IotMessage(error.getCode(), error.getSubCode(), error.getMsg()));
+                            result.success(new IotMessage(200200, error.getCode() + ":" + error.getSubCode() + ":" + error.getMsg()));
                         } else {
                             AppLog.d(TAG, "初始化失败");
-                            result.success(new IotMessage(-100100, "LinkKit init error but AError is null"));
+                            result.success(new IotMessage(-200200, "LinkKit init error but AError is null"));
                         }
                     }
 
@@ -156,7 +156,7 @@ public class Iot {
                     public void onInitDone(Object data) {
                         AppLog.d(TAG, "onInitDone() called with: data = [" + data + "]");
                         isInitDone = true;
-                        result.success(new IotMessage(0, "LinkKit init .. onInitDone"));
+                        result.success(new IotMessage(200200, "LinkKit init .. onInitDone"));
                     }
                 });
             }
@@ -190,39 +190,37 @@ public class Iot {
     }
 
     /**
-     * @param topic      "/" + productKey + "/" + deviceName + "/user/xxx
-     * @param qos        0,1
-     * @param productKey
-     * @param deviceName
+     * @param topic "/" + productKey + "/" + deviceName + "/user/xxx
      */
-    public static void subscribe(String topic, int qos, String productKey, String deviceName) {
+    public static void subscribe(String topic, @NonNull MethodCall call, @NonNull MethodChannel.Result result) {
         MqttSubscribeRequest subscribeRequest = new MqttSubscribeRequest();
         subscribeRequest.isSubscribe = true;
         subscribeRequest.topic = topic;
-        subscribeRequest.qos = qos;
+        subscribeRequest.qos = 0;
         LinkKit.getInstance().subscribe(subscribeRequest, new IConnectSubscribeListener() {
             @Override
             public void onSuccess() {
                 AppLog.d(TAG, "订阅成功");
+                result.success(new IotMessage(200202, "订阅成功"));
 
             }
 
             @Override
-            public void onFailure(AError aError) {
+            public void onFailure(AError error) {
                 AppLog.d(TAG, "订阅失败");
+                result.success(new IotMessage(-200202, error.getCode() + ":" + error.getSubCode() + "" + error.getMsg()));
             }
         });
 
     }
 
-    public static void publish(String topic, int qos, String productKey, String deviceName, JSONObject jsonObject) {
+    public static void publish(String topic, JSONObject publishObject, @NonNull MethodCall call, @NonNull MethodChannel.Result result) {
         MqttPublishRequest request = new MqttPublishRequest();
-        request.qos = qos;
+        request.qos = 0;
         request.isRPC = false;
         request.topic = topic;
         request.msgId = String.valueOf(IDGenerater.generateId());
-        // TODO 用户根据实际情况填写 仅做参考
-        request.payloadObj = jsonObject.toString();
+        request.payloadObj = publishObject.toString();
         LinkKit.getInstance().publish(request, new IConnectSendListener() {
             @Override
             public void onResponse(ARequest aRequest, AResponse aResponse) {
@@ -236,6 +234,7 @@ public class Iot {
                 }
 
                 AppLog.d(TAG, "请求成功");
+                result.success(new IotMessage(200201, "发布成功"));
             }
 
             @Override
@@ -249,6 +248,7 @@ public class Iot {
                     return;
                 }
                 AppLog.d(TAG, "请求失败");
+                result.success(new IotMessage(-200201, aError.getCode() + ":" + aError.getSubCode() + "" + aError.getMsg()));
             }
         });
 
