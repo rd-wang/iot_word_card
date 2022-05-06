@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.aliyun.alink.linksdk:coap-sdk:1.0.2sp1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/376c01095f855912bd9b56d57b6b51bf/jetified-coap-sdk-1.0.2sp1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/376c01095f855912bd9b56d57b6b51bf/jetified-coap-sdk-1.0.2sp1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/376c01095f855912bd9b56d57b6b51bf/jetified-coap-sdk-1.0.2sp1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

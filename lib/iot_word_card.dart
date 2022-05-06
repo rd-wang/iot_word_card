@@ -10,26 +10,26 @@ class IotWordCard {
 
   static bool _eventChannelReadied = false;
 
-  static Future<String> get sdkVersion async {
-    final String sdkVersion = await _channel.invokeMethod('getSDKVersion');
+  static Future<String?> get sdkVersion async {
+    final String? sdkVersion = await _channel.invokeMethod('getSDKVersion');
     return sdkVersion;
   }
 
-  static Future<String> init(IotConfig config) async {
+  static Future<String?> init(IotConfig config) async {
     return await _channel.invokeMethod('init', config.toJson());
   }
 
-  static Future<String> subscribe(String topic) async {
+  static Future<String?> subscribe(String topic) async {
     return await _channel.invokeMethod('subscribe', {"topic", topic});
   }
 
-  static Future<String> publish(String topic, String data) async {
+  static Future<String?> publish(String topic, String data) async {
     return await _channel.invokeMethod('publish', {"topic": topic, "data": data});
   }
 
   static Future<bool> listen(IotNotify onNotify) async {
     if (_eventChannelReadied != true) {
-      _eventChannel.receiveBroadcastStream().listen(onNotify);
+      _eventChannel.receiveBroadcastStream().listen(onNotify as void Function(dynamic)?);
       _eventChannelReadied = true;
     }
     return true;
@@ -41,21 +41,21 @@ class IotWordCard {
 
 
 class IotMessage {
-  int code;
-  int subCode;
-  String desc;
-  Message message;
+  int? code;
+  int? subCode;
+  String? desc;
+  Message? message;
 }
 
 class Message {
-  String msgType;
-  String from;
-  String originalName;
-  String targetName;
-  String content;
-  String electric;
-  String version;
-  String deviceId;
+  String? msgType;
+  String? from;
+  String? originalName;
+  String? targetName;
+  String? content;
+  String? electric;
+  String? version;
+  String? deviceId;
 
 }
 

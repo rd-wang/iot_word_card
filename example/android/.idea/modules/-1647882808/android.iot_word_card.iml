@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":iot_word_card" external.linked.project.path="$MODULE_DIR$/../../../../../android" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="com.example.iot_word_card" external.system.module.version="1.0" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="android-gradle" name="Android-Gradle">
+      <configuration>
+        <option name="GRADLE_PROJECT_PATH" value=":iot_word_card" />
+        <option name="LAST_SUCCESSFUL_SYNC_AGP_VERSION" value="4.2.1" />
+        <option name="LAST_KNOWN_AGP_VERSION" value="4.2.1" />
+      </configuration>
+    </facet>
+    <facet type="android" name="Android">
+      <configuration>
+        <option name="SELECTED_BUILD_VARIANT" value="debug" />
+        <option name="ASSEMBLE_TASK_NAME" value="assembleDebug" />
+        <option name="COMPILE_JAVA_TASK_NAME" value="compileDebugSources" />
+        <afterSyncTasks>
+          <task>generateDebugSources</task>
+        </afterSyncTasks>
+        <option name="ALLOW_USER_CONFIGURATION" value="false" />
+        <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
+        <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../../../android/src/main/res;file://$MODULE_DIR$/../../../../../android/src/debug/res;file://$MODULE_DIR$/../../../../build/iot_word_card/generated/res/rs/debug;file://$MODULE_DIR$/../../../../build/iot_word_card/generated/res/resValues/debug" />
+        <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../../../android/src/androidTest/res;file://$MODULE_DIR$/../../../../../android/src/androidTestDebug/res;file://$MODULE_DIR$/../../../../build/iot_word_card/generated/res/rs/androidTest/debug;file://$MODULE_DIR$/../../../../build/iot_word_card/generated/res/resValues/androidTest/debug" />
+        <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
+        <option name="PROJECT_TYPE" value="1" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/../../../../build/iot_word_card/intermediates/javac/debug/classes" />
+    <output-test url="file://$MODULE_DIR$/../../../../build/iot_word_card/intermediates/javac/debugUnitTest/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../../android">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../android/src/main/java" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../../android/.gradle" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../build/iot_word_card/generated/aidl_source_output_dir/debug/out" />
+    <content url="file://$MODULE_DIR$/../../../../build/iot_word_card/generated/aidl_source_output_dir/debugAndroidTest/out" />
+    <content url="file://$MODULE_DIR$/../../../../build/iot_word_card/generated/ap_generated_sources/debug/out" />
+    <content url="file://$MODULE_DIR$/../../../../build/iot_word_card/generated/ap_generated_sources/debugAndroidTest/out" />
+    <content url="file://$MODULE_DIR$/../../../../build/iot_word_card/generated/ap_generated_sources/debugUnitTest/out" />
+    <content url="file://$MODULE_DIR$/../../../../build/iot_word_card/generated/renderscript_source_output_dir/debug/out" />
+    <content url="file://$MODULE_DIR$/../../../../build/iot_word_card/generated/renderscript_source_output_dir/debugAndroidTest/out" />
+    <content url="file://$MODULE_DIR$/../../../../build/iot_word_card/generated/res/resValues/androidTest/debug" />
+    <content url="file://$MODULE_DIR$/../../../../build/iot_word_card/generated/res/resValues/debug" />
+    <content url="file://$MODULE_DIR$/../../../../build/iot_word_card/generated/res/rs/androidTest/debug" />
+    <content url="file://$MODULE_DIR$/../../../../build/iot_word_card/generated/res/rs/debug" />
+    <content url="file://$MODULE_DIR$/../../../../build/iot_word_card/generated/source/buildConfig/androidTest/debug" />
+    <content url="file://$MODULE_DIR$/../../../../build/iot_word_card/generated/source/buildConfig/debug" />
+    <orderEntry type="jdk" jdkName="Android API 30 Platform" jdkType="Android SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: io.flutter:flutter_embedding_debug:1.0.0-5d8bf811b3072390933d69f3e289a4bb673636c4" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-common-java8:2.2.0" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-common:2.2.0" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.arch.core:core-common:2.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.collection:collection:1.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.annotation:annotation:1.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.alibaba:fastjson:1.2.40" level="project" />
+    <orderEntry type="library" name="Gradle: com.aliyun.alink.linksdk:iot-apiclient:1.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.8.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.aliyun.alink.linksdk:network-core:1.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.okhttp3:okhttp:3.12.8" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.okio:okio:1.15.0" level="project" />
+    <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.11" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-all:4.1.23.Final" level="project" />
+    <orderEntry type="library" name="Gradle: com.aliyun.alink.linksdk:iot-linkkit:1.7.2@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.aliyun.alink.linksdk:iot-device-manager:1.7.5.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.aliyun.alink.linksdk:public-tmp:2.0.2.5@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.aliyun.alink.linksdk:connectsdk:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.aliyun.iot.aep.sdk:threadpool:0.0.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.appcompat:appcompat:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.fragment:fragment:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.activity:activity:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.vectordrawable:vectordrawable-animated:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.legacy:legacy-support-core-ui:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.viewpager:viewpager:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.legacy:legacy-support-core-utils:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.loader:loader:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.coordinatorlayout:coordinatorlayout:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.drawerlayout:drawerlayout:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.slidingpanelayout:slidingpanelayout:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.customview:customview:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.vectordrawable:vectordrawable:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.swiperefreshlayout:swiperefreshlayout:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.asynclayoutinflater:asynclayoutinflater:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.core:core:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-runtime:2.2.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.savedstate:savedstate:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-livedata:2.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-livedata-core:2.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.arch.core:core-runtime:2.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.versionedparcelable:versionedparcelable:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-viewmodel:2.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.cursoradapter:cursoradapter:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.documentfile:documentfile:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.localbroadcastmanager:localbroadcastmanager:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.print:print:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.interpolator:interpolator:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.aliyun.alink.linksdk:public-channel-core:0.7.7.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.aliyun.alink.linksdk:android_alink_id2:1.1.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.aliyun.alink.linksdk:tools:1.3.5.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.aliyun.alink.linksdk:public-cmp:1.9.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.aliyun.alink.linksdk:api-client-biz:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.aliyun.alink.linksdk:public-alcs-cmp:1.6.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.aliyun.alink.linksdk:android_alcs_lpbs:1.7.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.aliyun.alink.linksdk:coap-sdk:1.0.2sp1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.aliyun.alink.linksdk:public-channel-gateway:1.6.4@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.aliyun.alink.linksdk:opensource-paho:1.2.0.6@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.aliyun.alink.linksdk:iot-h2-stream:1.1.6@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.aliyun.alink.linksdk:iot-h2:1.1.6@aar" level="project" />
+  </component>
+</module>

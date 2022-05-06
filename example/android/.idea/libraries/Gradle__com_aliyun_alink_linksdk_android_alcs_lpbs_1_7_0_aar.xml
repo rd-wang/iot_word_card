@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.aliyun.alink.linksdk:android_alcs_lpbs:1.7.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5e5c3e65b0966e8e97c1a0b19ff20d9a/jetified-android_alcs_lpbs-1.7.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5e5c3e65b0966e8e97c1a0b19ff20d9a/jetified-android_alcs_lpbs-1.7.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5e5c3e65b0966e8e97c1a0b19ff20d9a/jetified-android_alcs_lpbs-1.7.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
